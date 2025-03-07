@@ -10,7 +10,7 @@ sns.set(style='dark')
 st.title("📊 Analisis Pengguna Sepeda")
 
 # Load data
-all_data = pd.read_csv("all_data.csv")
+all_data = pd.read_csv("dashboard/all_data.csv")
 
 # Konversi kolom 'dteday' ke format datetime
 all_data["dteday"] = pd.to_datetime(all_data["dteday"], errors='coerce')
